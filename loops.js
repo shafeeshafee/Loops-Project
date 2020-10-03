@@ -9,6 +9,7 @@
 // Expected output => dZnZtZ
 
 // log 1-10
+// https://repl.it/@shafee/oneThruTen
 const oneThruTen = () => {
 	for (let i = 1; i <= 10; i++) {
 		console.log(i);
@@ -17,7 +18,8 @@ const oneThruTen = () => {
 
 oneThruTen();
 
-// odd #'s from 3 and 103
+// return array odd #'s from 3 and 103
+// https://repl.it/@shafee/oddThreeToOneOhThree
 const oddNums = () => {
 	let initial = 3;
 	end = 103;
@@ -33,6 +35,7 @@ const oddNums = () => {
 oddNums();
 
 // return sum of array
+// https://repl.it/@shafee/sumOfArray
 const arraySum = (num) => {
 	let sum = 0;
 	for (let i = 0; i < num.length; i++) {
@@ -44,6 +47,7 @@ const arraySum = (num) => {
 arraySum([1, 2, 3, 4]);
 
 // Use a loop to display the numbers 9 to 0 in descending order.
+// https://repl.it/@shafee/descendingNine
 let descendingNine = [];
 
 for (let i = 9; i >= 0; i--) {
@@ -53,6 +57,7 @@ for (let i = 9; i >= 0; i--) {
 console.log(descendingNine.join(" "));
 
 // Write a function computing the factorial of n
+// https://repl.it/@shafee/Factorial
 const factorial = (n) => {
 	if (n === 0) return 1;
 
@@ -66,9 +71,10 @@ const factorial = (n) => {
 	return product;
 };
 
-factorial(5); // gives back 120
+factorial(5);
 
 // Write a function using a for loop that returns the sum of all numbers from 1 to n.
+// https://repl.it/@shafee/ConsecutiveAdder
 const adder = (n) => {
 	let nums = [];
 
@@ -82,6 +88,7 @@ const adder = (n) => {
 adder(10);
 
 // every second letter to 'Z'
+// https://repl.it/@shafee/SecondLetterZ
 const zee = (str) => {
 	return str.split("").map((letter, index) => {
 		return index % 2 === 1 ? (letter = "Z") : letter.toLowerCase();
