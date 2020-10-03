@@ -90,9 +90,12 @@ adder(10);
 // every second letter to 'Z'
 // https://repl.it/@shafee/SecondLetterZ
 const zee = (str) => {
-	return str.split("").map((letter, index) => {
-		return index % 2 === 1 ? (letter = "Z") : letter.toLowerCase();
-	});
+	return str
+		.split("")
+		.map((letter, index) => {
+			return index % 2 === 1 ? (letter = "Z") : letter.toLowerCase();
+		})
+		.join("");
 };
 
-zee("donut");
+zee("donuts");
